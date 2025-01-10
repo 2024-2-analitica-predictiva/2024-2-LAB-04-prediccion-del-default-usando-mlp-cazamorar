@@ -13,7 +13,7 @@ MODEL_FILENAME = "files/models/model.pkl.gz"
 MODEL_COMPONENTS = [
     "OneHotEncoder",
     "PCA",
-    "StandardScaler",
+    "MinMaxScaler",
     "SelectKBest",
     "MLPClassifier",
 ]
@@ -33,7 +33,7 @@ METRICS = [
     {
         "type": "metrics",
         "dataset": "test",
-        "precision": 0.673,
+        "precision": 0.621,
         "balanced_accuracy": 0.661,
         "recall": 0.370,
         "f1_score": 0.482,
